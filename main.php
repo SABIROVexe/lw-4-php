@@ -1,6 +1,6 @@
 <?php
 
-function alphabeticalOrder($str) {
+function alphabeticalOrder(string $str): string {
     
     $chars = [];
     $length = 0; 
@@ -40,7 +40,7 @@ function alphabeticalOrder($str) {
     return $result;
 }
 
-function findPerfectNumbers($array) {
+function findPerfectNumbers(array $array): array {
     $result = []; 
     
     
@@ -76,7 +76,7 @@ function findPerfectNumbers($array) {
     return $result;
 }
 
-function mostRecent($text) {
+function mostRecent(string $text): string {
     $length = 0;
     while (isset($text[$length])) {
         $length++;
